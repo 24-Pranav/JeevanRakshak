@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <!-- Apex Metadata -->
     <types>
         <members>*</members>
         <name>ApexClass</name>
@@ -22,15 +23,33 @@
     </types>
     <types>
         <members>*</members>
-        <name>AuraDefinitionBundle</name>
+        <name>LightningComponentBundle</name>
     </types>
     <types>
         <members>*</members>
-        <name>LightningComponentBundle</name>
+        <name>AuraDefinitionBundle</name>
     </types>
     <types>
         <members>*</members>
         <name>StaticResource</name>
     </types>
+
+    <!-- Custom Objects -->
+    <types>
+        <members>*</members>
+        <name>CustomObject</name>
+    </types>
+
+    <!-- Profiles and Permission Sets -->
+    <types>
+        <members>*</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>PermissionSet</name>
+    </types>
+
+    <!-- Add Version -->
     <version>64.0</version>
 </Package>

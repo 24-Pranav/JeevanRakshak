@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Emergency_Type__c</fullName>
+    <label>Emergency Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accident</fullName>
+                <default>false</default>
+                <label>Accident</label>
+            </value>
+            <value>
+                <fullName>Burn</fullName>
+                <default>false</default>
+                <label>Burn</label>
+            </value>
+            <value>
+                <fullName>Animal Bite</fullName>
+                <default>false</default>
+                <label>Animal Bite</label>
+            </value>
+            <value>
+                <fullName>Health Issue</fullName>
+                <default>false</default>
+                <label>Health Issue</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
