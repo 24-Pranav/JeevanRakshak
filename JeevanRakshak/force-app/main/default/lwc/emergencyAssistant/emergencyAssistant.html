@@ -1,0 +1,30 @@
+<template>
+    <lightning-card title="AI Emergency Assistant">
+        <!-- AI Suggested Action -->
+        <p class="slds-p-around_medium">AI Suggested Action: {suggestedAction}</p>
+        <lightning-button label="Get Help" onclick={getHelp}></lightning-button>
+
+        <!-- Load Emergency Cases -->
+        <lightning-button label="Load Emergency Cases" onclick={fetchCases} class="slds-m-top_small"></lightning-button>
+
+        <!-- Display Emergency Cases -->
+        <template if:true={cases}>
+            <template for:each={cases} for:item="ec">
+                <p key={ec.Id} class="slds-p-top_small">
+                    Patient: {ec.Patient__c}, Type: {ec.Emergency_Type__c}
+                    <lightning-button 
+                        label="View Patient" 
+                        data-patient-id={ec.Patient__c} 
+                        onclick={handleNavigateToPatient}
+                        class="slds-m-left_small">
+                    </lightning-button>
+                </p>
+            </template>
+        </template>
+
+        <!-- Display Error -->
+        <template if:true={error}>
+            <p class="slds-text-color_error">Error loading emergency cases: {error}</p>
+        </template>
+    </lightning-card>
+</template>
