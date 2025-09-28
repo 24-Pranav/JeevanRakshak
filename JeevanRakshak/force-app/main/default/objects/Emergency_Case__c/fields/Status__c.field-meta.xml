@@ -20,9 +20,14 @@
                 <label>In Progress</label>
             </value>
             <value>
-                <fullName>Resolved</fullName>
+                <fullName>Closed</fullName>
                 <default>false</default>
-                <label>Resolved</label>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>Escalated</fullName>
+                <default>false</default>
+                <label>Escalated</label>
             </value>
         </valueSetDefinition>
     </valueSet>

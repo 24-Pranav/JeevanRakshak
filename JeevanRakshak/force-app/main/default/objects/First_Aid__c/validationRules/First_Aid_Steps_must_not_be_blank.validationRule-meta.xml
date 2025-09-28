@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>First_Aid_Steps_must_not_be_blank</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISBLANK(Steps__c)</errorConditionFormula>
+    <errorMessage>First Aid Steps connot be empty</errorMessage>
+</ValidationRule>
